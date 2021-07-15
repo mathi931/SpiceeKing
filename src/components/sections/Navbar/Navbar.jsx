@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import tw, { styled } from 'twin.macro';
-import ProductGird from '../Directory/Directory';
+import React from 'react';
+import tw from 'twin.macro';
 
 const Navbar = () => {
 	return <Container>Navbar</Container>;

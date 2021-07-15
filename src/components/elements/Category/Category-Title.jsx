@@ -1,5 +1,5 @@
 import React from 'react';
-import tw, { styled } from 'twin.macro';
+import tw from 'twin.macro';
 
 const Title = ({ cTitle, bg }) => {
 	return (
@@ -11,6 +11,6 @@ const Title = ({ cTitle, bg }) => {
 };
 export default Title;
 
-const Container = tw.div`text-2xl uppercase p-12 cursor-pointer flex flex-col items-center justify-center bg-gray-300 opacity-75`;
-const Titl = tw.h2`text-gray-800 font-semibold`;
-const Subtitle = tw.h3`text-gray-700 tracking-wider font-light`;
+const Container = tw.div`text-2xl uppercase p-12 cursor-pointer flex flex-col items-center justify-center bg-gray-700 opacity-60`;
+const Titl = tw.h2`text-white font-semibold`;
+const Subtitle = tw.h3`text-gray-100 tracking-wider font-light`;

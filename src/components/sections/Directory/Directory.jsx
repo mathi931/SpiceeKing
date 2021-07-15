@@ -8,18 +8,23 @@ class Directory extends Component {
 		super();
 
 		this.state = {
-			CategoryData: CategoryData,
+			categories: CategoryData,
 		};
 	}
 
 	render() {
 		return (
 			<Container>
-				<Category cTitle='grass' />
-				<Category cTitle='grass' />
-				<Category cTitle='grass' />
-				<Category cTitle='grass' grow={true} />
-				<Category cTitle='grass' grow={true} />
+				{this.state.categories.map((c) => {
+					console.log(c);
+					return(
+					<Category
+						key={c.id}
+						cTitle={c.title}
+						Iurl={c.url}
+						grow={c.id > 3 ? true : false}
+					/>
+				)})}
 			</Container>
 		);
 	}
