@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import tw, { styled } from 'twin.macro';
-import ProductGird from '../../sections/ProductGrid/ProductGrid';
+import ProductGird from '../Directory/Directory';
 
 const Navbar = () => {
 	return <Container>Navbar</Container>;
