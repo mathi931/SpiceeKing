@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 import tw, { styled } from 'twin.macro';
+import { Homepage } from './components/pages/Pages';
 
 class App extends Component {
 	render() {
 		return (
 			<Container>
-				<InnerContainer>
-					<Wrapper>
-						<Card />
-						<Card />
-						<Card />
-						<Card grow={true}/>
-						<Card grow={true}/>
-					</Wrapper>
-				</InnerContainer>
+				<Homepage />
 			</Container>
 		);
 	}
@@ -26,8 +19,6 @@ const Card = styled.div(({ grow }) => [
 	grow && tw` md:max-w-full lg:h-96`,
 ]);
 
-const Container = tw.div`h-full w-full font-poppins`;
-
-const InnerContainer = tw.div`max-w-screen-xl w-full mx-auto`;
+const Container = tw.div`max-w-screen-xl w-full mx-auto h-full font-poppins`;
 
 export default App;
