@@ -17,14 +17,10 @@ class Directory extends Component {
 			<Container>
 				{this.state.categories.map((c) => {
 					console.log(c);
-					return(
-					<Category
-						key={c.id}
-						cTitle={c.title}
-						Iurl={c.url}
-						grow={c.id > 3 ? true : false}
-					/>
-				)})}
+					return (
+						<Category key={c.id} cTitle={c.title} Iurl={c.url} size={c.size? "large" : null} />
+					);
+				})}
 			</Container>
 		);
 	}

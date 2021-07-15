@@ -17,11 +17,13 @@
 	{
 		"title": "indian",
 		"url": "https://www.spicejungle.com/pub/media/catalog/product/cache/7c6617a36aa637128ac36c8b5cbe7e13/g/a/garam_masala.jpg",
-		"id": 4
+		"id": 4,
+		"size": "large"
 	},
 	{
 		"title": "italian",
 		"url": "https://assets.instantsearchplus.com/thumbs/www.spicejungle.com/1a1e2391-73a0-4a6c-b648-ef1620a2c2c7-serp.webp",
-		"id": 5
+		"id": 5,
+		"size": "large"
 	}
 ]
