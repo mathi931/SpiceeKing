@@ -4,12 +4,14 @@ import LogoImg from '../../../assets/spiceeLogo.png';
 
 const Logo = () => {
 	return (
-		<Container>
-			<ImageC>
-				<img src={LogoImg} alt='brand-logo' />
-			</ImageC>
-			<LogoText>SpiceeKing</LogoText>
-		</Container>
+		<div>
+			<Container>
+				<ImageC>
+					<img src={LogoImg} alt='brand-logo' />
+				</ImageC>
+				<LogoText>SpiceeKing</LogoText>
+			</Container>
+		</div>
 	);
 };
 export default Logo;
@@ -30,6 +32,7 @@ const LogoText = styled.div`
         text-xl
         md:text-2xl
         font-bold
+		px-1
     `}
 `;
 
@@ -43,5 +46,3 @@ const ImageC = styled.div`
 		height: 100%;
 	}
 `;
-
-
