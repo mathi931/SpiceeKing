@@ -16,6 +16,13 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
 
+      spicy: {
+        yellow: '#F2CB30',
+        orange: '#F28730',
+        red:'#F24730',
+        green: '#43D982',
+        gray: '#3D4954',
+      },
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
