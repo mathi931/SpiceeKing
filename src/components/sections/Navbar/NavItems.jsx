@@ -4,7 +4,7 @@ import { slide as Burger } from 'react-burger-menu';
 import burgerStyle from './burgerStyle';
 import { useMediaQuery } from 'react-responsive';
 import { SCREENS } from '../../responsive';
-import {BrowserRouter} from 'react-router-dom';
+import { Router, Link, Switch } from 'react-router-dom';
 
 const NavItems = () => {
 	const mobileView = useMediaQuery({ maxWidth: SCREENS.sm });
@@ -13,30 +13,18 @@ const NavItems = () => {
 		return (
 			<Burger right styles={burgerStyle}>
 				<Container>
-					<NavItem mobile>
-						<a href='#'>Home</a>
-					</NavItem>
-					<NavItem mobile>
-						<a href='#'>Shop</a>
-					</NavItem>
-					<NavItem mobile>
-						<a href='#'>Contact</a>
-					</NavItem>
+					<NavItem mobile><Link to="/">home</Link></NavItem>
+					<NavItem mobile><Link to='/shop' >shop</Link></NavItem>
+					<NavItem mobile><Link to='/contact'>contact</Link></NavItem>
 				</Container>
 			</Burger>
 		);
 	}
 	return (
 		<Container>
-			<NavItem>
-				<a href='#'>Home</a>
-			</NavItem>
-			<NavItem>
-				<a href='#'>Shop</a>
-			</NavItem>
-			<NavItem>
-				<a href='#'>Contact</a>
-			</NavItem>
+			<NavItem><Link to="/">home</Link></NavItem>
+			<NavItem ><Link to='/shop' >shop</Link></NavItem>
+			<NavItem ><Link to='/contact'>contact</Link></NavItem>
 		</Container>
 	);
 };
@@ -61,6 +49,7 @@ const NavItem = styled.li`
         transition
         duration-500
         ease-in-out
+		uppercase
         hover:text-white
         hover:bg-spicy-gray
     `};

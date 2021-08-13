@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import tw from 'twin.macro';
-import { Homepage } from './components/pages/Pages';
+import { Homepage, ShopPage, ContactPage } from './components/pages/Pages';
+import { Route, Switch } from 'react-router-dom';
+
 
 class App extends Component {
 	render() {
 		return (
 			<Container>
-				<Homepage />
+				<Switch>
+					<Route exact path='/'> <Homepage /></Route>
+					<Route path='/shop'> <ShopPage /></Route>
+					<Route path='/contact'> <ContactPage /></Route>
+				</Switch>
 			</Container>
 		);
 	}
