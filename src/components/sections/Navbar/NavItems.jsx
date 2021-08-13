@@ -4,6 +4,7 @@ import { slide as Burger } from 'react-burger-menu';
 import burgerStyle from './burgerStyle';
 import { useMediaQuery } from 'react-responsive';
 import { SCREENS } from '../../responsive';
+import {BrowserRouter} from 'react-router-dom';
 
 const NavItems = () => {
 	const mobileView = useMediaQuery({ maxWidth: SCREENS.sm });
